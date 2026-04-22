@@ -2,13 +2,12 @@
 
 > *Listen smarter. Learn deeper. Share the journey.*
 
-Nimble is an AI-native audiobook app that transforms passive listening into an active learning experience. Built for Ukrainian-speaking users first, designed to scale globally.
-
+Nimble is an AI-native audiobook app that transforms passive listening into an active learning experience. 
 ---
 
 ## 🔥 The Problem
 
-Current audiobook apps (Audible, Apple Books, Абук) treat listening as a one-way experience. Users:
+Current audiobook apps (Audible, Apple Books )
 - Hear words but don't retain knowledge
 - Can't ask questions about what they're listening to
 - Have no tools to capture and review key ideas
