@@ -1,17 +1,15 @@
 # 📖 Nimble — AI-Powered Audiobook Platform
 
-> *Listen smarter. Learn deeper. Share the journey.*
-
 Nimble is an AI-based audiobook app that helps users to learn through an interactive listeting. 
 ---
 
 ##  Market problem
 
 Current audiobook apps (Audible, Apple Books, Storytel )
-- Hear words but don't retain knowledge
-- Can't ask questions about what they're listening to
-- Have no tools to capture and review key ideas
-- Listen in isolation with no social layer
+- Don't have an interactive voice over
+- Can't give answears to users questions about the book
+- Have no tools to help you get new knowledge 
+- Listening in isolation with no social layer
 
 **Result:** People finish books but don't rememder a lot. The audiobook becomes a background tool rather than an learing instrument.
 
@@ -26,9 +24,9 @@ Nimble will feature an AI-assitant that knows exactly where you are in the book 
 | Feature | Description |
 |---|---|
 | 🎧 Smart Player | Full-featured player with 15s/30s skip, speed control, car mode, sleep timer |
-| 🤖 AI Assistant | In-app chat that answers questions about the book — spoiler-free, position-aware |
+| 🤖 AI Assistant | In-app chat that answers questions about the book - spoiler-free, position-aware |
 | 📝 Clip & Note | One tap to clip a moment and save it to your personal notes |
-| 📚 Notes Library | Saved words, quotes, paragraphs — organized by book |
+| 📚 Notes Library | Save words, quotes, paragraphs - and learn them with AI |
 | 🔁 AI Repetition | Push notifications that quiz you on your saved notes using spaced repetition |
 | 👥 Friends & Progress | Add friends, see their reading progress, leave reactions and comments |
 | 📖 Real Page Tracker | Shows your equivalent page number in the physical book alongside audio progress |
@@ -59,7 +57,7 @@ This means users can freely ask "Who is this character?" or "What does this word
 
 ## 🎯 Target Market
 
-**Primary:** Ukrainian-speaking readers aged 16–35, both in Ukraine and diaspora
+**Primary:** Ukrainian-speaking readers aged 16–45, both in Ukraine and diaspora
 **Secondary:** Post-MVP expansion to other Eastern European languages
 
 ---
