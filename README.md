@@ -65,30 +65,22 @@ This means users can freely ask "Who is this character?" or "What does this word
 ## 📊 Traction & Validation
 
 - Concept validated through CusDev interviews with potential users
-- Identified clear pain point: users finish audiobooks but retain little
-- No direct competitor in Ukraine offers AI-assisted audiobook listening
-- Pre-launch content presence being built across TikTok, Instagram, Threads
+- Exciting problem: users don't retain much knowledge after listening to the book.
+- No direct competitor in audiobook market.
+- Pre-launch content presence being built across TikTok, Instagram, Threads, Youtube, Linkedln.
 
 ---
 
 ## 🗺 Roadmap
 
 ```
-Month 1-2  →  MVP Development (player + AI chat + notes + 15 books)
-Month 2-3  →  Beta testing with 50-100 users
-Month 3    →  App Store + Google Play launch
-Month 4-6  →  Content marketing, organic growth, publisher partnerships
-Month 6+   →  Friends features, spaced repetition push, Series B features
+1. MVP Development (player + AI chat + notes + 15 books)
+2. Beta testing with users
+3. App Store + Google Play launch
+4. Content marketing, organic growth, publisher partnerships
+5. Friends features, spaced repetition push, Series B features
+
 ```
-
----
-
-## 👤 Founder
-
-**Stas** — Producer & Marketer
-Building Nimble as first startup. Running organic content strategy across social platforms during development phase (YouTube, TikTok, Instagram, Threads).
-
----
 
 ## 📁 Repository Structure
 
