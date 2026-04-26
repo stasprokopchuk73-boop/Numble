@@ -4,10 +4,9 @@
 
 The global audiobook market is one of the fastest-growing segments in media:
 
-- **2019:** Global market valued at $3.67B
-- **2020–2027:** Expected CAGR of 24.4%
+- **2025 - $7 billion :** Expected grow YoY~20 %
 - **Spotify effect:** After Spotify entered audiobooks in late 2023, the sector grew 28% within months
-- Audiobooks are now **4.2% of all European book sales** (up from 3.5% in 2023) — the fastest-growing format
+
 
 Major global players: Audible (Amazon), Apple Books, Spotify, Scribd, Storytel, Kobo.
 
