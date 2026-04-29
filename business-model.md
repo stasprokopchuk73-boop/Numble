@@ -16,19 +16,13 @@ Users pay a recurring monthly subscription to access the full catalog and AI fea
 | **Basic** | $2.99/mo | Full catalog access, AI chat (20 queries/day), notes |
 | **Standard** | $6.99/mo | Everything + unlimited AI, spaced repetition push |
 | **Premium** | $10.99/mo | Everything + priority features, early access, offline |
+| **ARPU $6.50** |
 
 **Pricing rationale:**
 - Lower than Audible ($14.95) and Storytel (~$13) to reduce friction in a developing market
 - $2.99 entry point removes the "too expensive" objection for Ukrainian audience
 - $6.99 is the sweet spot — most features, most likely tier for engaged users
 
-**Projected tier distribution (Year 1):**
-- Free → 60% of signups (conversion funnel)
-- Basic ($2.99) → 25%
-- Standard ($6.99) → 12%
-- Premium ($10.99) → 3%
-
-**Blended ARPU:** ~$4.80/month per paying user
 
 ---
 
@@ -48,13 +42,6 @@ Monthly royalty = (publisher_minutes_listened / total_minutes_listened) × (mont
 
 **Royalty rate:** 25–35% of subscription revenue allocated to content pool
 
-**Example:**
-- Month revenue: $5,000
-- Content pool (30%): $1,500
-- Publisher A = 40% of all listening minutes → receives $600
-- Publisher B = 25% → receives $375
-- etc.
-
 ### Why Publishers Should Say Yes
 
 1. Zero upfront cost to them — no production needed (we use existing recordings)
@@ -63,31 +50,36 @@ Monthly royalty = (publisher_minutes_listened / total_minutes_listened) × (mont
 4. Ukrainian market alternative to piracy — legitimate revenue stream
 5. Access to user engagement data (which books, which chapters people actually finish)
 
-### Contract Structure
-
-Each publisher agreement includes:
-- Non-exclusive digital streaming license
-- Per-minute royalty rate (negotiated, typically 25–35% revenue share)
-- Monthly automated royalty report
-- 30-day termination notice
-- Anti-spoiler API access clause (Nimble must know chapter structure)
-
 ---
 
 ## Cost Structure
 
+MVP Phase (Jul–Aug 2026, ~2 months)
+ItemCostAI Developer (2 months × $2,000)$4,000
+Vibe coding tools $240
+Supabase Free tier - dev phase(when published -$25/m, when we will have large base of users - $599/m) 
+OpenAI API (testing during dev)$50
+App Store annual fee$99
+Google Play one-time$25
+Legal (publisher contracts)$400
+Figma + design tools$30
+Domain + misc$50
+Total MVP~$4,894
+
+Ongoing Monthly Costs (Post-Launch, around september 2026+)
+Item               0–300 users   300–800 users      800–2,000 users 
+AI Developer       $2,000            $2,000            $2,000
+Coding subs~       $120              $120              $120AI 
+API — GPT-4o-mini  $15               $80               $220
+Supabase Pro       $50               $75               $150
+Audio CDN          $80               $180              $400
+Firebase FCM push  $0                $0                $0          прорахувати 
+App Store ($99/yr)
 ### MVP Phase (Months 1–2, ~$6,000)
 
 | Item | Cost |
-|---|---|
-| AI Developer (2 months) | $3,500–4,000 |
-| Servers + Supabase + OpenAI API | $300–400 |
-| App Store ($99) + Google Play ($25) | $130 |
-| Book licenses / revenue share agreements | $0–500 |
-| Legal (publisher contracts) | $400 |
-| Design tools + assets | $200 |
-| **Total** | **~$5,500–5,630** |
-
+Ai-dev tools and other subscriptions for app function. Total for 6 months ~$13.919
+MArketing for 6 months - $34.000
 ### Ongoing Monthly Costs (Post-Launch)
 
 | Item | Cost at 500 users | Cost at 2,000 users |
@@ -102,23 +94,16 @@ Each publisher agreement includes:
 
 ## Financial Projections
 
-### Conservative Scenario
+APRU - $6.50 
+BEP ~ 630 users 
 
-| Period | Paying Users | Monthly Revenue | Monthly Costs | Net |
-|---|---|---|---|---|
-| Month 1–3 (beta) | 0–50 | $0–240 | $300 | -$300 |
-| Month 4–6 | 100–200 | $480–960 | $400 | +$80–560 |
-| Month 7–12 | 300–600 | $1,440–2,880 | $600 | +$840–2,280 |
-| Year 2 | 1,000–3,000 | $4,800–14,400 | $1,500 | +$3,300–12,900 |
-| Year 3 | 5,000–10,000 | $24,000–48,000 | $5,000 | +$19,000–43,000 |
+### Realistic Scenario
 
-### Break-Even Point
 
-**~400–500 paying subscribers** covers all infrastructure + basic operating costs.
+Period                      Paying                  UsersNet               Monthly Revenue           Monthly CostsNet
 
-At blended ARPU of $4.80 and 500 users: **$2,400/month revenue vs ~$600 costs** → profitable at this scale.
+Month 1–2 (Sep–Nov 2026) 
 
-**Realistic break-even: Month 8–14** depending on growth rate of organic content strategy.
 
 ---
 
@@ -142,35 +127,3 @@ At blended ARPU of $4.80 and 500 users: **$2,400/month revenue vs ~$600 costs** 
 - App Store optimization for "аудіокниги" keywords
 
 ---
-
-## Grant & Investment Strategy
-
-### Immediate (Now)
-- **Дія.Бізнес grant:** 250,000 UAH (~$6,000) — matches MVP budget exactly
-- Requirement: hire 1 employee (built into operational budget as AI developer)
-
-### Post-MVP (Month 3–6)
-- **Grant programs for projects with existing MVP:** stronger application with real user data
-- **Angel investors:** 500–2,000 users + $2,000+/month revenue = credible pitch
-- **EU startup grants:** Ukrainian tech startups eligible for several EU innovation funds
-
-### Why Investors Should Care
-- Fastest-growing media format globally (24.4% CAGR)
-- Zero AI-native competitor in Ukrainian market
-- Low CAC (founder-led organic content)
-- High retention mechanism built in (spaced repetition = daily opens)
-- Clear path to $1M ARR with 17,000 paying subscribers at blended $5/month
-
----
-
-## Key Metrics to Track
-
-| Metric | Target (Month 6) | Target (Month 12) |
-|---|---|---|
-| MAU | 500 | 2,000 |
-| Paying subscribers | 150 | 600 |
-| DAU/MAU ratio | >40% | >50% |
-| Average listening time/session | >25 min | >30 min |
-| AI queries per user/week | >5 | >8 |
-| Churn rate (monthly) | <8% | <5% |
-| Publisher partners | 3 | 8 |
