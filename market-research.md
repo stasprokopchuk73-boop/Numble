@@ -1,17 +1,24 @@
 # 📊 Market Research — Nimble
 
-## Global Audiobook Market
+1. Global Market
+The global audiobooks market is estimated at $10.88B in 2025, growing at CAGR of 26.4% through 2032. Different research firms give different figures — the honest range across sources is $8.3B–$11.2B in 2025, with most clustering around $10–11B. Quartr
+ResearchAndMarkets (most conservative, March 2025): $8.32B in 2025, CAGR 15.57% to $17.18B by 2030. ReelMind
+2026 projection: $12–14B depending on methodology.
+What's driving growth:
 
-The global audiobook market is one of the fastest-growing segments in media:
+Average listener now completes 6.8 titles/year vs 4.9 in 2023 Tales of Belle
+Fiction = 63.2% of market. Subscription is overtaking one-time downloads at 26.5% CAGR Tales of Belle
+57% of listeners aged 18–44, largest cohort is 25–34 (29.28%) PR Newswire
+Smartphones = 62% of all listening. AI narration expanding catalogs by 80% cost reduction Google Sites
 
-- **2025 - $7 billion :** Expected grow YoY~20 %
-- **Spotify effect:** After Spotify entered audiobooks in late 2023, the sector grew 28% within months
+Market leaders:
 
+Audible (Amazon) — dominant, 40,000+ AI-narrated titles, 100+ languages
+Spotify — bundled audiobooks in Premium since 2023, 200,000+ titles
+Apple Books — per-title model, strong iOS ecosystem
+Storytel — subscription leader in Europe, 2.67M subscribers
 
-Major global players: Audible (Amazon), Apple Books, Spotify, Scribd, Storytel, Kobo.
-
-**Key insight:** None of these players offer AI-assisted comprehension tools. The entire market treats listening as a passive experience.
-
+Us vs global leaders: None offer position-aware AI chat, spoiler-free comprehension, clip-to-notes, or spaced repetition. AI investment globally is 100% on production side, zero on listener experience.
 ---
 
 ## Ukrainian Audiobook Market
