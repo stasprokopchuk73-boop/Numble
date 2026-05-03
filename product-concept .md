@@ -69,7 +69,9 @@ json{
   "current_position_seconds": 8040,
   "equivalent_page": 184
 }
-This position is the hard boundary. When a user asks the AI anything, the system checks every piece of information it would return against this boundary before responding.
+
+This position is the hard boundary. 
+When a user asks the AI anything, the system checks every piece of information it would return against this boundary before responding.
 
 If the answer requires knowledge of events, characters, or plot points beyond page 184 — the system blocks that portion of the response automatically, regardless of how the question is phrased.
 
