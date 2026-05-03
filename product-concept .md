@@ -30,11 +30,11 @@ The player is the foundation. It needs to feel as polished as Audible or Spotify
 
 ---
 
-### 2. 🤖 AI Chat Assistant (Core Differentiator)
+### 2. 🤖 AI Chat Assistant 
 
 The AI assistant is the heart of Nimble. It operates under two strict rules that no competitor has implemented:
 
-**Rule 1 — Position Awareness**
+**1 — Position Awareness**
 
 Every user session stores current reading state:
 
@@ -50,19 +50,33 @@ Every user session stores current reading state:
 
 This context is injected into every AI query automatically.
 
-**Rule 2 — Spoiler Prevention**
+**2 — AI Voiceover and Spoiler Prevention**
 
-System prompt instructs the model:
+1. Voice Switching
+The AI analyzes the text in real time and identifies speaker turns — narrator, protagonist, secondary characters. Each character is assigned a distinct TTS voice via ElevenLabs API. When a character speaks, the voice switches automatically. When narration resumes, it returns to the default narrator voice.
 
-> "You are a reading assistant for [Book Title]. The user is currently at Chapter 7, page 184 of 412. You must NEVER reference events, characters, or plot points that occur after this position. If asked about future events, politely decline and explain why."
+2. The AI reads scene context and generates ambient sound effects that play underneath the narration. A door scene gets a creak. A rainstorm gets rain. A crowd scene gets ambient noise. Effects are generated via ElevenLabs Sound Effects API and mixed at low volume under the main audio track.
 
-**What users can ask:**
-- "Who is this character?"
-- "What does this word mean?"
-- "Explain what just happened"
-- "What's the historical context of this scene?"
-- "Is this based on real events?"
-- "Why did this character do that?"
+
+Anti-Spoiler System
+Every user session tracks an exact reading position:
+json{
+  "user_id": "u_123",
+  "book_id": "b_456",
+  "current_chapter": 7,
+  "current_position_seconds": 8040,
+  "equivalent_page": 184
+}
+This position is the hard boundary. When a user asks the AI anything, the system checks every piece of information it would return against this boundary before responding.
+If the answer requires knowledge of events, characters, or plot points beyond page 184 — the system blocks that portion of the response automatically, regardless of how the question is phrased.
+user: "Does Woland turn out to be the devil?"
+system check: → this information exists at page 310
+system check: → user is at page 184
+system check: → 310 > 184 → BLOCK
+response: "I can't answer that yet — it would spoil what's ahead.
+           Ask me again when you get further into the book."
+The AI only draws from the content the user has already heard. It knows the full book — but it deliberately restricts itself to the user's current window. The further the user listens, the more the AI can answer.
+
 
 **Chat UI:**
 - Compact AI pill button on main player screen — one tap to open
@@ -74,12 +88,8 @@ System prompt instructs the model:
 
 ---
 
-### 3. ✂️ Clip & Note System
+### 3. ✂️ Note System
 
-**Clip (one tap during playback):**
-- Saves current timestamp automatically
-- Auto-transcribes last 15–30 seconds
-- Tagged with book title and chapter
 
 **Manual Notes:**
 - Save words with AI-generated definition
@@ -93,7 +103,6 @@ System prompt instructs the model:
 
 The AI reads the user's notes library and sends smart daily push notifications:
 
-- "Remember 'іманентний' from Майстер і Маргарита? What does it mean?"
 - User answers in notification or taps to open app
 - AI evaluates the response and adjusts repetition frequency
 - Based on SM-2 algorithm — same as Anki and Duolingo
@@ -113,7 +122,7 @@ Key **daily retention driver** — brings users back even between books.
 
 ### 6. 📚 Catalog — 15 Books at Launch
 
-- Mix of Ukrainian public domain classics and 2–3 contemporary titles via revenue-share agreements
+- Mix of different genres of books: fiction, non-fiction, detective, thriller.
 - Each book: cover image, author, narrator, total duration, genre tags, chapter list
 - Browse and search on Library tab
 
@@ -126,33 +135,28 @@ Key **daily retention driver** — brings users back even between books.
 - Leave emoji reactions on friends' progress updates
 - Simple activity feed: "Аліna finished Chapter 5 of 1984"
 
-*Full comments and discussion threads pushed to v1.1*
 
 ---
 
-## What's NOT in MVP (v1.1+)
+## What's NOT in MVP 
 
 | Feature | Reason |
 |---|---|
-| Dynamic AI voice narration with character voices | Most complex feature — separate R&D needed |
-| AI-generated sound effects | Requires audio pipeline not needed for core loop |
 | Voice input for AI chat | Text covers 95% of use cases at MVP stage |
-| Book recommendations AI | Needs usage data first — add post-launch |
+| Book recommendations from AI | Needs usage data first — add post-launch |
 | Full comment threads | Reactions-only social is faster to ship |
 | CarPlay / Android Auto | Add when user base justifies it |
 | Publisher analytics dashboard | PDF royalty reports sufficient for MVP |
 
 ---
 
-## UX Principles (Don Norman's Design of Everyday Things)
+## UX Principles (Tooke inspirations and instructions from Don Norman's Design of Everyday Things)
 
-Every screen decision in Nimble follows three principles:
 
 **1. Affordances** — Every element communicates its function visually. The play button is circular and elevated — it looks pressable. The progress bar has a visible thumb — it looks scrubbable. The AI pill is outlined not filled — secondary to the player, clearly tappable.
 
 **2. Mapping** — Controls follow spatial logic. 15s rewind is on the left, 30s forward is on the right. The AI chat slides up from the bottom — the natural gesture for "reveal more." Notes are one tap from the player without losing listening context.
 
-**3. Feedback** — Every action confirms itself immediately. Progress bar updates in real time. Notes save with a micro-animation. AI responses stream token-by-token. Streak increments with a small animation each day.
 
 ---
 
