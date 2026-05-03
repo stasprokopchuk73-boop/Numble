@@ -100,37 +100,37 @@ BEP ~ 630 users
 ### Realistic Scenario
 
 
-Period                     Paying Users                 Net Monthly Revenue               Monthly Costs          Net
+| Period                     Paying Users                 Net Monthly Revenue               Monthly Costs          Net
 
-Month 1 (Jul 2026)          0                           $0                                $4500                  -$4,500                                                
-Month 2 (Aug 2026)          0                           $0                                $4500                  -$4,500
-Month 3 (Sep 2026)          90                          $350                              $2,443                 -$2,093 
-Month 4 (Oct 2026)          296                         $1,152                            $2,443                 -$1,291
-Month 5 (Nov 2026)          401                         $1,560                            $2,443                 -$883 
-Month 6 (Dec 2026)          466                         $1,814                            $2,443                 -$629
+| Month 1 (Jul 2026)          0                           $0                                $4500                  -$4,500                                                
+| Month 2 (Aug 2026)          0                           $0                                $4500                  -$4,500
+| Month 3 (Sep 2026)          90                          $350                              $2,443                 -$2,093 
+| Month 4 (Oct 2026)          296                         $1,152                            $2,443                 -$1,291
+| Month 5 (Nov 2026)          401                         $1,560                            $2,443                 -$883 
+| Month 6 (Dec 2026)          466                         $1,814                            $2,443                 -$629
 
 ### Optimistic Scenario 
 
 
-Period                     Paying Users                 Net Monthly Revenue               Monthly Costs          Net
+| Period                     Paying Users                 Net Monthly Revenue               Monthly Costs          Net
 
-Month 1 (Jul 2026)          0                           $0                                $4500                  -$4,500                                                
-Month 2 (Aug 2026)          0                           $0                                $4500                  -$4,500
-Month 3 (Sep 2026)          300                         $1,167                            $2,443                 -$1,276
-Month 4 (Oct 2026)          650                         $2,529                            $2,443                 +$86
-Month 5 (Nov 2026)          900                         $3,501                            $2,443                 +$1,058
-Month 6 (Dec 2026)          1.100                       $4,279                            $2,443                 +$1,836
+| Month 1 (Jul 2026)          0                           $0                                $4500                  -$4,500                                                
+| Month 2 (Aug 2026)          0                           $0                                $4500                  -$4,500
+| Month 3 (Sep 2026)          300                         $1,167                            $2,443                 -$1,276
+| Month 4 (Oct 2026)          650                         $2,529                            $2,443                 +$86
+| Month 5 (Nov 2026)          900                         $3,501                            $2,443                 +$1,058
+| Month 6 (Dec 2026)          1.100                       $4,279                            $2,443                 +$1,836
 
 ---
 
-Marketing spends for 6 months 
+| Marketing spends for 6 months 
 
-Month 1 (Jul 2026) $1,500
-Month 2 (Aug 2026) $2,500
-Month 3 (Sep 2026) $10,000
-Month 4 (Oct 2026) $7,000
-Month 5 (Nov 2026) $7,000
-Month 6 (Dec 2026) $7,000
+| Month 1 (Jul 2026) $1,500
+| Month 2 (Aug 2026) $2,500
+| Month 3 (Sep 2026) $10,000
+| Month 4 (Oct 2026) $7,000
+| Month 5 (Nov 2026) $7,000
+| Month 6 (Dec 2026) $7,000
 
 ---
 
