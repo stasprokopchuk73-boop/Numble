@@ -2,7 +2,7 @@
 
 ## Vision
 
-Transform audiobook listening from passive entertainment into an active, social, and educational experience — powered by AI that knows exactly where you are in the book.
+Transform audiobook listening from passive entertainment into an active, social, and educational experience - powered by AI that helps you experience everything there is in the audiobook.
 
 ---
 
