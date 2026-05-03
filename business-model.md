@@ -75,12 +75,12 @@ Ongoing Monthly Costs (Post-Launch, around september 2026+)
 |---|---|---|---|
 | AI Developer | $2,000 | $2,000 | $2,000 |
 | Coding subs | $120 | $120 | $120 |
-| AI API — GPT-4o-mini | $15 | $80 | $220 |
-| Supabase Pro | $50 | $75 | $150 |
-| Audio CDN | $80 | $180 | $400 |
+| AI API — GPT-4o-mini | $30 | $150 | $400 |
+| Supabase Pro | $50 | $75 | $1500 |
+| Audio CDN | $150 | $300 | $550 |
 | Firebase FCM push | $0 | $0 | $50 |
 | App Store ($99/yr) | $8 | $8 | $8 |
-| **Total** | **$2,273** | **$2,463** | **$2,948** |
+| **Total** | **$2,358** | **$2,653** | **$3.278** |
 
 | Item | Cost |
 Ai-dev tools and other subscriptions for app function. Total for 6 months ~$13.919
@@ -100,7 +100,7 @@ MArketing for 6 months - $34.000
 ## Financial Projections
 
 APRU - $6.50 
-BEP ~ 630 users 
+BEP ~ 610 users 
 
 ### Realistic Scenario
 
