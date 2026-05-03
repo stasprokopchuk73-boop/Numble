@@ -34,7 +34,7 @@ The player is the foundation. It needs to feel as polished as Audible or Spotify
 
 The AI assistant is the heart of Nimble. It operates under two strict rules that no competitor has implemented:
 
-**1 — Position Awareness**
+**1 - Position Awareness**
 
 Every user session stores current reading state:
 
@@ -53,7 +53,7 @@ This context is injected into every AI query automatically.
 **2 — AI Voiceover and Spoiler Prevention**
 
 1. Voice Switching
-The AI analyzes the text in real time and identifies speaker turns — narrator, protagonist, secondary characters. 
+The AI analyzes the text in real time and identifies speaker turns - narrator, protagonist, secondary characters. 
 Each character is assigned a distinct TTS voice via ElevenLabs API. When a character speaks, the voice switches automatically. 
 When narration resumes, it returns to the default narrator voice.
 
@@ -73,23 +73,23 @@ json{
 This position is the hard boundary. 
 When a user asks the AI anything, the system checks every piece of information it would return against this boundary before responding.
 
-If the answer requires knowledge of events, characters, or plot points beyond page 184 — the system blocks that portion of the response automatically, regardless of how the question is phrased.
+If the answer requires knowledge of events, characters, or plot points beyond page 184 - the system blocks that portion of the response automatically, regardless of how the question is phrased.
 
 "user: "Does Woland turn out to be the devil?"
 system check: → this information exists at page 310
 system check: → user is at page 184
 system check: → 310 > 184 → BLOCK
-response: "I can't answer that yet — it would spoil what's ahead.
+response: "I can't answer that yet - it would spoil what's ahead.
            Ask me again when you get further into the book."
            
-The AI only draws from the content the user has already heard. It knows the full book — but it deliberately restricts itself to the user's current window. The further the user listens, the more the AI can answer.
+The AI only draws from the content the user has already heard. It knows the full book - but it deliberately restricts itself to the user's current window. The further the user listens, the more the AI can answer.
 
 
 **Chat UI:**
-- Compact AI pill button on main player screen — one tap to open
+- Compact AI pill button on main player screen - one tap to open
 - Bottom sheet slides up covering ~75% of screen
 - Mini player strip stays visible at top while chat is open
-- AI responses stream token-by-token — user sees it thinking in real time
+- AI responses stream token-by-token - user sees it thinking in real time
 - Session history saved per book
 - Close button returns to full player without losing position
 
@@ -112,7 +112,7 @@ The AI reads the user's notes library and sends smart daily push notifications:
 
 - User answers in notification or taps to open app
 - AI evaluates the response and adjusts repetition frequency
-- Based on SM-2 algorithm — same as Anki and Duolingo
+- Based on SM-2 algorithm - same as Anki and Duolingo
 
 Key **daily retention driver** — brings users back even between books.
 
@@ -123,7 +123,7 @@ Key **daily retention driver** — brings users back even between books.
 - Tracks consecutive days of listening
 - Visible on home screen
 - Duolingo's streak is their #1 cited retention mechanic
-- Simple: a number and a fire emoji — no complex gamification needed in MVP
+- Simple: a number and a fire emoji - no complex gamification needed in MVP
 
 ---
 
@@ -150,7 +150,7 @@ Key **daily retention driver** — brings users back even between books.
 | Feature | Reason |
 |---|---|
 | Voice input for AI chat | Text covers 95% of use cases at MVP stage |
-| Book recommendations from AI | Needs usage data first — add post-launch |
+| Book recommendations from AI | Needs usage data first - add post-launch |
 | Full comment threads | Reactions-only social is faster to ship |
 | CarPlay / Android Auto | Add when user base justifies it |
 | Publisher analytics dashboard | PDF royalty reports sufficient for MVP |
@@ -160,9 +160,9 @@ Key **daily retention driver** — brings users back even between books.
 ## UX Principles (Tooke inspirations and instructions from Don Norman's Design of Everyday Things)
 
 
-**1. Affordances** — Every element communicates its function visually. The play button is circular and elevated — it looks pressable. The progress bar has a visible thumb — it looks scrubbable. The AI pill is outlined not filled — secondary to the player, clearly tappable.
+**1. Affordances** - Every element communicates its function visually. The play button is circular and elevated - it looks pressable. The progress bar has a visible thumb - it looks scrubbable. The AI pill is outlined not filled - secondary to the player, clearly tappable.
 
-**2. Mapping** — Controls follow spatial logic. 15s rewind is on the left, 30s forward is on the right. The AI chat slides up from the bottom — the natural gesture for "reveal more." Notes are one tap from the player without losing listening context.
+**2. Mapping** - Controls follow spatial logic. 15s rewind is on the left, 30s forward is on the right. The AI chat slides up from the bottom — the natural gesture for "reveal more." Notes are one tap from the player without losing listening context.
 
 
 ---
