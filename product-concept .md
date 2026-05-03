@@ -53,7 +53,9 @@ This context is injected into every AI query automatically.
 **2 — AI Voiceover and Spoiler Prevention**
 
 1. Voice Switching
-The AI analyzes the text in real time and identifies speaker turns — narrator, protagonist, secondary characters. Each character is assigned a distinct TTS voice via ElevenLabs API. When a character speaks, the voice switches automatically. When narration resumes, it returns to the default narrator voice.
+The AI analyzes the text in real time and identifies speaker turns — narrator, protagonist, secondary characters. 
+Each character is assigned a distinct TTS voice via ElevenLabs API. When a character speaks, the voice switches automatically. 
+When narration resumes, it returns to the default narrator voice.
 
 2. The AI reads scene context and generates ambient sound effects that play underneath the narration. A door scene gets a creak. A rainstorm gets rain. A crowd scene gets ambient noise. Effects are generated via ElevenLabs Sound Effects API and mixed at low volume under the main audio track.
 
@@ -68,13 +70,16 @@ json{
   "equivalent_page": 184
 }
 This position is the hard boundary. When a user asks the AI anything, the system checks every piece of information it would return against this boundary before responding.
+
 If the answer requires knowledge of events, characters, or plot points beyond page 184 — the system blocks that portion of the response automatically, regardless of how the question is phrased.
-user: "Does Woland turn out to be the devil?"
+
+"user: "Does Woland turn out to be the devil?"
 system check: → this information exists at page 310
 system check: → user is at page 184
 system check: → 310 > 184 → BLOCK
 response: "I can't answer that yet — it would spoil what's ahead.
            Ask me again when you get further into the book."
+           
 The AI only draws from the content the user has already heard. It knows the full book — but it deliberately restricts itself to the user's current window. The further the user listens, the more the AI can answer.
 
 
