@@ -55,10 +55,10 @@ This means users can freely ask "Who is this character?" or "What does this word
 
 ---
 
-## 🎯 Target Market
+## 🎯 Target Market for MVP
 
-**Primary:** Ukrainian-speaking readers aged 16–45, both in Ukraine and diaspora
-**Secondary:** Post-MVP expansion to other Eastern European languages
+**Primary:** Ukrainian-speaking readers aged 16–45, both in Ukraine and Europe
+**Secondary:** Post-MVP expansion to other Eastern European languages and contries.
 
 ---
 
