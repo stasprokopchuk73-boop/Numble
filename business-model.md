@@ -53,30 +53,34 @@ Monthly royalty = (publisher_minutes_listened / total_minutes_listened) × (mont
 ---
 
 ## Cost Structure
-|---|---|---|---|---|
+
+| Item | Cost |
+|---|---|
 | MVP Phase | (Jul–Aug 2026, ~2 months) |
-| ItemCostAI Developer | (2 months × $2,000)$4,000 |
+| MVP phase AI Developer (2 months × $2,000) | $4,000 |
 | Vibe coding tools | $240 |
-| Supabase Free tier | dev phase(when published -$25/m, when we will have large base of users - $599/m) |
-| OpenAI API | (testing during dev)$50 |
-| App Store annual|  fee$99 |
-| Google Play | one-time$25 |
-| Legal | (publisher contracts)$400 |
-| Figma + design tools| $30 |
-| Domain + misc| $50 |
-| Total MVP | ~$4,894 |
+| Supabase Free tier (dev phase) | $0 |
+| dev phase(when published -$25/m, when we will have large base of users - $599/m) |
+| OpenAI API (testing during dev) | $50 |
+| App Store annual fee | $99 |
+| Google Play one-time | $25 |
+| Legal (publisher contracts) | $400 |
+| Figma + design tools | $30 |
+| Domain + misc | $50 |
+| **Total MVP** | **~$4,894** |
 
 Ongoing Monthly Costs (Post-Launch, around september 2026+)
-|---|---|---|---|---|
-Item              | 0–300 users  | 300–800 users   |   800–2,000 users 
-AI Developer      | $2,000       |     $2,000       |     $2,000
-Coding subs~      | $120         |     $120        |      $120AI 
-API — GPT-4o-mini | $15          |     $80         |      $220
-Supabase Pro      | $50          |     $75         |      $150
-Audio CDN         | $80          |     $180        |      $400
-Firebase FCM push | $0           |     $0          |      $0          
-App Store ($99/yr)
-### MVP Phase (Months 1–2, ~$6,000)
+
+ Item | 0–300 users | 300–800 users | 800–2,000 users |
+|---|---|---|---|
+| AI Developer | $2,000 | $2,000 | $2,000 |
+| Coding subs | $120 | $120 | $120 |
+| AI API — GPT-4o-mini | $15 | $80 | $220 |
+| Supabase Pro | $50 | $75 | $150 |
+| Audio CDN | $80 | $180 | $400 |
+| Firebase FCM push | $0 | $0 | $50 |
+| App Store ($99/yr) | $8 | $8 | $8 |
+| **Total** | **$2,273** | **$2,463** | **$2,948** |
 
 | Item | Cost |
 Ai-dev tools and other subscriptions for app function. Total for 6 months ~$13.919
