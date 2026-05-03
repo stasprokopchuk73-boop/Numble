@@ -126,12 +126,12 @@ BEP ~ 630 users
 
 | Marketing spends for 6 months 
 |---|---|---|---|---|
-| Month 1 | (Jul 2026) | $1,500
-| Month 2 | (Aug 2026) | $2,500
-| Month 3 | (Sep 2026) | $10,000
-| Month 4 | (Oct 2026) | $7,000
-| Month 5 | (Nov 2026) | $7,000
-| Month 6 | (Dec 2026) | $7,000
+| Month 1 | (Jul 2026) | $1,500 |
+| Month 2 | (Aug 2026) | $2,500 |
+| Month 3 | (Sep 2026) | $10,000|
+| Month 4 | (Oct 2026) | $7,000 |
+| Month 5 | (Nov 2026) | $7,000 |
+| Month 6 | (Dec 2026) | $7,000 |
 
 ---
 
